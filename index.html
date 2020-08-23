@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Emotion Recognition</title>
+
+    <meta
+      name="description"
+      content="An Emotion Recognition Application using Javascript."
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <script defer src="face-api.min.js"></script>
+    <script defer src="script.js"></script>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        height: 50vw;
+        display: flex;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+      }
+
+      canvas{
+        position:absolute;
+      }
+    </style>
+  </head>
+
+  <body>
+    <video id="video" width="720" height="560" autoplay muted></video>
+  </body>
+</html>
