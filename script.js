@@ -23,6 +23,7 @@ function startVideo() {
 }
 
 video.addEventListener('playing', () => {
+  console.log("detections started");
   const canvas = faceapi.createCanvasFromMedia(video)
   document.body.append(canvas)
   const displaySize = { width: video.width, height: video.height }
