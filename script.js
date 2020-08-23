@@ -4,9 +4,9 @@ const video = document.getElementById('video')
 
 Promise.all([
   faceapi.nets.tinyFaceDetector.loadFromUri('Emotion-Recognition/models'),
-  faceapi.nets.faceLandmark68Net.loadFromUri('/emotion recognition/models'),
-  faceapi.nets.faceRecognitionNet.loadFromUri('/emotion recognition/models'),
-  faceapi.nets.faceExpressionNet.loadFromUri('/emotion recognition/models')
+  faceapi.nets.faceLandmark68Net.loadFromUri('Emotion-Recognition/models'),
+  faceapi.nets.faceRecognitionNet.loadFromUri('Emotion-Recognition/models'),
+  faceapi.nets.faceExpressionNet.loadFromUri('Emotion-Recognition/models')
 ]).then(startVideo)
 
 function startVideo() {
